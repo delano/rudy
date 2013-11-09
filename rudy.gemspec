@@ -12,16 +12,29 @@ Gem::Specification.new do |s|
   s.date = "2013-11-09"
   s.description = "Rudy: a modern scripting tool for building, deploying, and maintaining."
   s.email = "rudy@solutious.com"
+  s.executables = ["rudy"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md"
+  ]
+  s.files = [
+    "Gemfile",
+    "LICENSE.txt",
+    "README.md",
+    "Rakefile",
+    "VERSION",
+    "bin/rudy",
+    "lib/rudy.rb",
+    "lib/rudy/cli.rb",
+    "lib/rudy/cli/base.rb",
+    "rudy.gemspec"
   ]
   s.homepage = "https://github.com/delano/rudy"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubyforge_project = "rudy"
   s.rubygems_version = "1.8.23"
-  s.summary = "Rudy: a modern scripting tool for building, deploying, and having a good time."
+  s.summary = "Rudy: a modern scripting tool for building, deploying, and maintaining."
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
